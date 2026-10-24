@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081820">
+  <meta name="description" content="Mersin Transfer VIP ile şehir içi, şehirler arası ve Çukurova Havalimanı transferlerinde konforlu, özel şoförlü yolculuk. 7/24 rezervasyon için arayın veya WhatsApp'tan yazın.">
+  <link rel="canonical" href="https://mersintransfervip.com/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Mersin Transfer VIP | Size Özel Yolculuk">
+  <meta property="og:description" content="Mersin çıkışlı şehir içi, şehirler arası ve Çukurova Havalimanı VIP transfer hizmetleri.">
+  <meta property="og:image" content="https://mersintransfervip.com/assets/images/fleet-4.webp">
+  <title>Mersin Transfer VIP | Mersin VIP Transfer ve Havalimanı Ulaşımı</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #10232c;
+      --ink-soft: #41545b;
+      --night: #081820;
+      --night-2: #102a34;
+      --cream: #f4f1e9;
+      --white: #fffdf8;
+      --line: rgba(16, 35, 44, .13);
+      --gold: #d9b875;
+      --gold-dark: #ad8740;
+      --sea: #7292a0;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --radius: 18px;
+      --shadow: 0 24px 70px rgba(13, 32, 40, .12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--sans); line-height: 1.6; }
+    body.menu-open { overflow: hidden; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    img { display: block; max-width: 100%; }
+    .skip-link { position: fixed; left: 14px; top: -60px; z-index: 99; padding: 12px 16px; color: var(--ink); background: var(--white); border-radius: 8px; }
+    .skip-link:focus { top: 14px; }
+    .container { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+    .topline { background: #061117; color: rgba(255,255,255,.76); font-size: 12px; letter-spacing: .05em; }
+    .topline-inner { min-height: 39px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .topline-left, .topline-right { display: flex; align-items: center; gap: 18px; }
+    .topline a { color: white; transition: color .2s ease; }
+    .topline a:hover { color: var(--gold); }
+    .topline-dot { display: inline-block; width: 6px; height: 6px; margin-right: 8px; vertical-align: 1px; border-radius: 50%; background: var(--gold); }
+    .site-header { position: sticky; top: 0; z-index: 20; background: rgba(8, 24, 32, .97); color: white; border-bottom: 1px solid rgba(255,255,255,.09); backdrop-filter: blur(14px); }
+    .header-inner { min-height: 83px; display: flex; align-items: center; justify-content: space-between; gap: 26px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; min-width: max-content; }
+    .brand-mark { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid rgba(217,184,117,.66); border-radius: 50%; color: var(--gold); font-family: var(--serif); font-size: 16px; letter-spacing: -.07em; }
+    .brand-copy { display: grid; gap: 1px; line-height: 1.05; }
+    .brand-name { font-size: 13px; font-weight: 700; letter-spacing: .14em; }
+    .brand-sub { margin-top: 5px; color: rgba(255,255,255,.56); font-size: 9px; letter-spacing: .22em; text-transform: uppercase; }
+    .nav { display: flex; align-items: center; gap: clamp(15px, 2.3vw, 30px); }
+    .nav a { color: rgba(255,255,255,.78); font-size: 12px; font-weight: 600; transition: color .2s ease; }
+    .nav a:hover { color: var(--gold); }
+    .nav .nav-cta { padding: 12px 17px; color: var(--night); background: var(--gold); border-radius: 999px; }
+    .nav .nav-cta:hover { color: var(--night); background: #ebd39f; }
+    .nav-toggle { display: none; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; background: transparent; color: white; cursor: pointer; }
+    .nav-toggle svg { width: 21px; height: 21px; margin: auto; }
+    .hero { position: relative; min-height: 680px; display: flex; align-items: center; isolation: isolate; overflow: hidden; background: var(--night); color: white; }
+    .hero-image { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 56%; }
+    .hero-scrim { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(5,18,24,.98) 0%, rgba(5,18,24,.9) 31%, rgba(5,18,24,.57) 57%, rgba(5,18,24,.12) 100%), linear-gradient(0deg, rgba(5,18,24,.62) 0%, transparent 42%); }
+    .hero-content { width: min(1160px, calc(100% - 48px)); margin: 0 auto; padding: 95px 0 126px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--gold); font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 30px; height: 1px; background: currentColor; }
+    h1, h2, h3, p { margin-top: 0; }
+    .hero h1 { max-width: 680px; margin: 23px 0 20px; font-family: var(--serif); font-size: clamp(47px, 6.4vw, 82px); font-weight: 400; line-height: .99; letter-spacing: -.055em; }
+    .hero h1 em { color: var(--gold); font-weight: 400; }
+    .hero-copy { max-width: 520px; margin-bottom: 32px; color: rgba(255,255,255,.77); font-size: 16px; line-height: 1.8; }
+    .button-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .button { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0 21px; border: 1px solid transparent; border-radius: 999px; font-size: 12px; font-weight: 700; transition: transform .2s ease, background .2s ease, border-color .2s ease; cursor: pointer; }
+    .button:hover { transform: translateY(-2px); }
+    .button-gold { background: var(--gold); color: var(--night); }
+    .button-gold:hover { background: #ebd39f; }
+    .button-outline { border-color: rgba(255,255,255,.4); color: white; background: rgba(255,255,255,.04); }
+    .button-outline:hover { border-color: var(--gold); }
+    .button-dark { color: white; background: var(--night); }
+    .button-dark:hover { background: #18323c; }
+    .button svg { width: 16px; height: 16px; flex: none; }
+    .hero-note { display: flex; align-items: center; gap: 12px; margin-top: 30px; color: rgba(255,255,255,.62); font-size: 11px; }
+    .hero-note span:first-child { width: 26px; height: 26px; display: grid; place-items: center; border: 1px solid rgba(217,184,117,.65); border-radius: 50%; color: var(--gold); }
+    .hero-note svg { width: 13px; height: 13px; }
+    .hero-footer { position: absolute; right: 0; bottom: 0; left: 0; border-top: 1px solid rgba(255,255,255,.2); background: rgba(7,22,29,.58); backdrop-filter: blur(7px); }
+    .hero-points { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .hero-point { display: flex; align-items: center; gap: 13px; min-height: 78px; padding: 12px 24px; border-right: 1px solid rgba(255,255,255,.16); }
+    .hero-point:first-child { padding-left: 0; }
+    .hero-point:last-child { border-right: 0; }
+    .point-icon { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid rgba(217,184,117,.5); border-radius: 50%; color: var(--gold); }
+    .point-icon svg { width: 16px; height: 16px; }
+    .hero-point strong { display: block; color: white; font-size: 11px; }
+    .hero-point small { display: block; margin-top: 3px; color: rgba(255,255,255,.58); font-size: 10px; }
+    .section { padding: 105px 0; }
+    .section-heading { max-width: 670px; margin-bottom: 47px; }
+    .section-heading.center { margin-inline: auto; text-align: center; }
+    .section-heading.center .eyebrow { justify-content: center; }
+    .section-heading h2 { margin: 16px 0 14px; font-family: var(--serif); font-size: clamp(37px, 4.6vw, 56px); font-weight: 400; line-height: 1.05; letter-spacing: -.045em; }
+    .section-heading p { max-width: 590px; margin-bottom: 0; color: var(--ink-soft); font-size: 14px; line-height: 1.8; }
+    .section-heading.center p { margin-inline: auto; }
+    .services { background: var(--cream); }
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .service-card { position: relative; min-height: 244px; padding: 27px 26px 24px; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,253,248,.76); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+    .service-card:hover { transform: translateY(-5px); border-color: rgba(173,135,64,.36); box-shadow: var(--shadow); }
+    .service-icon { width: 43px; height: 43px; display: grid; place-items: center; margin-bottom: 25px; border-radius: 13px; background: #e8e3d7; color: var(--gold-dark); }
+    .service-icon svg { width: 20px; height: 20px; }
+    .service-card h3 { margin: 0 0 9px; font-family: var(--serif); font-size: 22px; font-weight: 400; letter-spacing: -.02em; }
+    .service-card p { margin: 0; color: var(--ink-soft); font-size: 12px; line-height: 1.75; }
+    .service-card a { position: absolute; inset: 0; border-radius: inherit; }
+    .service-card a:focus-visible { outline: 3px solid var(--gold-dark); outline-offset: 3px; }
+    .service-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 15px; color: var(--gold-dark); font-size: 11px; font-weight: 700; }
+    .service-link svg { width: 13px; height: 13px; }
+    .split-section { padding: 0; background: var(--white); }
+    .split-grid { display: grid; grid-template-columns: 1fr 1fr; min-height: 595px; }
+    .split-image-wrap { position: relative; min-height: 100%; overflow: hidden; background: #d6d8d3; }
+    .split-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .image-caption { position: absolute; right: 22px; bottom: 22px; left: 22px; padding: 12px 15px; border: 1px solid rgba(255,255,255,.23); border-radius: 12px; color: white; background: rgba(8,24,32,.64); backdrop-filter: blur(9px); font-size: 11px; }
+    .split-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(54px, 8vw, 106px); }
+    .split-copy h2 { margin: 16px 0 16px; font-family: var(--serif); font-size: clamp(38px, 4vw, 53px); font-weight: 400; line-height: 1.05; letter-spacing: -.05em; }
+    .split-copy > p { color: var(--ink-soft); font-size: 14px; line-height: 1.8; }
+    .benefit-list { display: grid; gap: 16px; margin: 24px 0 30px; padding: 0; list-style: none; }
+    .benefit-list li { display: flex; gap: 12px; color: var(--ink); font-size: 12px; line-height: 1.55; }
+    .check-icon { width: 23px; height: 23px; display: grid; place-items: center; flex: none; border-radius: 50%; background: #e9e4d7; color: var(--gold-dark); }
+    .check-icon svg { width: 13px; height: 13px; }
+    .benefit-list strong { display: block; margin-bottom: 2px; font-size: 12px; }
+    .benefit-list span:not(.check-icon) { color: var(--ink-soft); }
+    .fleet { color: white; background: var(--night); }
+    .fleet .section-heading p { color: rgba(255,255,255,.63); }
+    .fleet .eyebrow { color: var(--gold); }
+    .fleet-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; }
+    .fleet-card { overflow: hidden; border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius); background: #102832; }
+    .fleet-card-image { height: 275px; overflow: hidden; background: #182f38; }
+    .fleet-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+    .fleet-card:hover .fleet-card-image img { transform: scale(1.045); }
+    .fleet-card:nth-child(1) .fleet-card-image img { object-position: center 59%; }
+    .fleet-card:nth-child(2) .fleet-card-image img { object-position: center 53%; }
+    .fleet-card:nth-child(3) .fleet-card-image img { object-position: center 52%; }
+    .fleet-card-body { padding: 22px 22px 24px; }
+    .fleet-card-label { color: var(--gold); font-size: 9px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    .fleet-card h3 { margin: 8px 0 8px; font-family: var(--serif); font-size: 23px; font-weight: 400; }
+    .fleet-card p { min-height: 57px; margin: 0 0 17px; color: rgba(255,255,255,.63); font-size: 11px; line-height: 1.7; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tag { padding: 6px 9px; border: 1px solid rgba(255,255,255,.14); border-radius: 999px; color: rgba(255,255,255,.76); font-size: 9px; }
+    .fleet-note { display: flex; align-items: center; justify-content: space-between; gap: 22px; margin-top: 25px; padding: 22px 25px; border: 1px solid rgba(217,184,117,.3); border-radius: 14px; background: rgba(255,255,255,.035); }
+    .fleet-note p { max-width: 670px; margin: 0; color: rgba(255,255,255,.72); font-size: 12px; line-height: 1.7; }
+    .fleet-note strong { color: white; }
+    .fleet-note a { min-width: max-content; color: var(--gold); font-size: 11px; font-weight: 700; }
+    .fleet-note a:hover { color: white; }
+    .gallery { padding: 92px 0 104px; background: #eae6dc; }
+    .gallery-header { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 27px; }
+    .gallery-header .section-heading { margin: 0; }
+    .gallery-header .section-heading h2 { margin-bottom: 0; font-size: clamp(35px, 4vw, 48px); }
+    .gallery-header > p { max-width: 300px; margin: 0 0 4px; color: var(--ink-soft); font-size: 11px; line-height: 1.7; }
+    .gallery-grid { display: grid; grid-template-columns: 1.15fr .85fr .85fr; grid-template-rows: 230px 230px; gap: 12px; }
+    .gallery-item { position: relative; overflow: hidden; border-radius: 14px; background: #bac1bf; }
+    .gallery-item:first-child { grid-row: span 2; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .55s ease; }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .gallery-item::after { content: ""; position: absolute; inset: 35% 0 0; background: linear-gradient(0deg, rgba(6,19,25,.68), transparent); pointer-events: none; }
+    .gallery-item figcaption { position: absolute; z-index: 1; bottom: 15px; left: 16px; color: white; font-size: 11px; font-weight: 600; }
+    .gallery-item figure { margin: 0; height: 100%; }
+    .why { background: var(--white); }
+    .why-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: start; }
+    .why-intro h2 { margin: 15px 0 17px; font-family: var(--serif); font-size: clamp(38px, 4.2vw, 55px); font-weight: 400; line-height: 1.04; letter-spacing: -.05em; }
+    .why-intro p { max-width: 410px; color: var(--ink-soft); font-size: 13px; line-height: 1.8; }
+    .why-list { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 30px; padding-top: 7px; }
+    .why-item { display: flex; gap: 14px; }
+    .why-item .service-icon { width: 42px; height: 42px; flex: none; margin: 0; }
+    .why-item h3 { margin: 1px 0 5px; font-size: 12px; }
+    .why-item p { margin: 0; color: var(--ink-soft); font-size: 11px; line-height: 1.7; }
+    .route-band { position: relative; overflow: hidden; padding: 62px 0; color: white; background: var(--night-2); }
+    .route-band::before, .route-band::after { content: ""; position: absolute; width: 320px; height: 320px; border: 1px solid rgba(217,184,117,.19); border-radius: 50%; pointer-events: none; }
+    .route-band::before { top: -205px; left: -80px; }
+    .route-band::after { right: -100px; bottom: -235px; width: 420px; height: 420px; }
+    .route-inner { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .route-inner h2 { max-width: 700px; margin: 0; font-family: var(--serif); font-size: clamp(32px, 4.2vw, 48px); font-weight: 400; line-height: 1.08; letter-spacing: -.04em; }
+    .route-inner p { margin: 11px 0 0; color: rgba(255,255,255,.66); font-size: 12px; }
+    .faq { background: var(--cream); }
+    .faq-grid { display: grid; grid-template-columns: .78fr 1.22fr; gap: 80px; }
+    .faq-intro h2 { margin: 15px 0 14px; font-family: var(--serif); font-size: clamp(38px, 4vw, 52px); font-weight: 400; line-height: 1.05; letter-spacing: -.05em; }
+    .faq-intro p { color: var(--ink-soft); font-size: 12px; line-height: 1.8; }
+    .faq-items { border-top: 1px solid var(--line); }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-item summary { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 21px 0; color: var(--ink); font-size: 13px; font-weight: 700; list-style: none; cursor: pointer; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; color: var(--gold-dark); font-family: var(--serif); font-size: 24px; font-weight: 400; line-height: 1; }
+    .faq-item[open] summary::after { content: "−"; }
+    .faq-item p { max-width: 610px; margin: -5px 36px 21px 0; color: var(--ink-soft); font-size: 12px; line-height: 1.8; }
+    .contact { padding: 105px 0; color: white; background: var(--night); }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: start; }
+    .contact-intro h2 { margin: 16px 0 14px; font-family: var(--serif); font-size: clamp(42px, 4.6vw, 58px); font-weight: 400; line-height: 1; letter-spacing: -.05em; }
+    .contact-intro > p { max-width: 400px; margin-bottom: 31px; color: rgba(255,255,255,.65); font-size: 13px; line-height: 1.8; }
+    .contact-list { display: grid; gap: 16px; margin-top: 29px; }
+    .contact-line { display: flex; align-items: center; gap: 14px; }
+    .contact-line .point-icon { width: 39px; height: 39px; }
+    .contact-line small { display: block; margin-bottom: 3px; color: rgba(255,255,255,.51); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+    .contact-line strong, .contact-line a { color: white; font-size: 13px; font-weight: 600; }
+    .contact-line a:hover { color: var(--gold); }
+    .booking-card { padding: 30px; border: 1px solid rgba(255,255,255,.13); border-radius: 20px; background: #102832; box-shadow: 0 28px 80px rgba(0,0,0,.15); }
+    .booking-card h3 { margin: 0 0 8px; font-family: var(--serif); font-size: 27px; font-weight: 400; }
+    .booking-card > p { margin-bottom: 23px; color: rgba(255,255,255,.58); font-size: 11px; line-height: 1.7; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .field { display: grid; gap: 7px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label { color: rgba(255,255,255,.75); font-size: 10px; font-weight: 600; }
+    .field input, .field select, .field textarea { width: 100%; min-height: 45px; padding: 11px 13px; border: 1px solid rgba(255,255,255,.13); border-radius: 8px; outline: 0; color: white; background: #0a2029; font-size: 11px; }
+    .field textarea { min-height: 83px; resize: vertical; }
+    .field input::placeholder, .field textarea::placeholder { color: rgba(255,255,255,.36); }
+    .field select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='none' stroke='%23d9b875' stroke-linecap='round' stroke-width='1.4' d='m2 4 4 4 4-4'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 13px center; }
+    .field select option { color: white; background: #0a2029; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(217,184,117,.15); }
+    .form-submit { width: 100%; margin-top: 17px; }
+    .form-privacy { margin: 12px 0 0 !important; color: rgba(255,255,255,.45) !important; font-size: 9px !important; line-height: 1.6 !important; }
+    .site-footer { padding: 27px 0; color: rgba(255,255,255,.56); background: #061117; font-size: 10px; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .footer-brand { color: white; font-size: 10px; font-weight: 700; letter-spacing: .15em; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 17px; }
+    .footer-links a:hover { color: var(--gold); }
+    .mobile-callbar { display: none; }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    @media (max-width: 930px) {
+      .nav { gap: 15px; }
+      .nav a { font-size: 11px; }
+      .nav .nav-cta { padding: 11px 13px; }
+      .split-copy { padding: 55px 44px; }
+      .why-grid { gap: 40px; }
+      .faq-grid { gap: 45px; }
+      .contact-grid { gap: 40px; }
+    }
+    @media (max-width: 760px) {
+      html { scroll-padding-top: 74px; }
+      .container { width: min(100% - 34px, 560px); }
+      .topline-inner { min-height: 35px; }
+      .topline-left { display: none; }
+      .topline-inner { justify-content: center; }
+      .topline-right { gap: 16px; }
+      .header-inner { min-height: 70px; }
+      .brand-mark { width: 40px; height: 40px; }
+      .brand-name { font-size: 11px; }
+      .nav-toggle { display: grid; place-items: center; }
+      .nav { position: fixed; inset: 105px 0 auto; display: none; align-items: stretch; flex-direction: column; gap: 0; max-height: calc(100dvh - 105px); overflow-y: auto; padding: 8px 20px 20px; border-bottom: 1px solid rgba(255,255,255,.12); background: #081820; }
+      .nav.is-open { display: flex; }
+      .nav a { padding: 15px 8px; border-bottom: 1px solid rgba(255,255,255,.09); font-size: 13px; }
+      .nav .nav-cta { margin-top: 15px; padding: 13px 17px; border-bottom: 0; text-align: center; }
+      .hero { min-height: 720px; min-height: min(780px, 100svh); align-items: flex-start; }
+      .hero-image { object-position: 61% center; }
+      .hero-scrim { background: linear-gradient(90deg, rgba(5,18,24,.91), rgba(5,18,24,.68) 60%, rgba(5,18,24,.33)), linear-gradient(0deg, rgba(5,18,24,.83), transparent 62%); }
+      .hero-content { width: min(100% - 34px, 560px); padding: 92px 0 178px; }
+      .hero h1 { max-width: 480px; margin-top: 18px; font-size: clamp(48px, 14vw, 68px); }
+      .hero-copy { max-width: 440px; font-size: 14px; }
+      .hero-footer { background: rgba(7,22,29,.75); }
+      .hero-points { grid-template-columns: 1fr; padding: 8px 0; }
+      .hero-point { min-height: 53px; padding: 7px 0; border-right: 0; }
+      .hero-point:not(:last-child) { border-bottom: 1px solid rgba(255,255,255,.1); }
+      .point-icon { width: 30px; height: 30px; }
+      .hero-point strong { font-size: 10px; }
+      .hero-point small { font-size: 9px; }
+      .section { padding: 76px 0; }
+      .section-heading { margin-bottom: 31px; }
+      .section-heading h2 { font-size: clamp(36px, 10vw, 48px); }
+      .section-heading p { font-size: 12px; }
+      .service-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .service-card { min-height: 224px; padding: 20px 17px; }
+      .service-card h3 { font-size: 19px; }
+      .service-card p { font-size: 10px; }
+      .service-icon { width: 39px; height: 39px; margin-bottom: 18px; }
+      .split-grid { grid-template-columns: 1fr; }
+      .split-image-wrap { min-height: 390px; }
+      .split-copy { padding: 50px 25px 58px; }
+      .split-copy h2 { font-size: 42px; }
+      .split-copy > p { font-size: 12px; }
+      .benefit-list { gap: 13px; }
+      .fleet-grid { grid-template-columns: 1fr; gap: 13px; }
+      .fleet-card { display: grid; grid-template-columns: .9fr 1.1fr; min-height: 190px; }
+      .fleet-card-image { height: 100%; min-height: 190px; }
+      .fleet-card-body { display: flex; flex-direction: column; justify-content: center; padding: 17px; }
+      .fleet-card h3 { font-size: 20px; }
+      .fleet-card p { min-height: 0; margin-bottom: 12px; font-size: 10px; }
+      .tag-row { gap: 5px; }
+      .tag { padding: 5px 7px; font-size: 8px; }
+      .fleet-note { align-items: flex-start; flex-direction: column; gap: 13px; padding: 18px; }
+      .fleet-note p { font-size: 11px; }
+      .gallery { padding: 72px 0; }
+      .gallery-header { align-items: flex-start; flex-direction: column; gap: 14px; }
+      .gallery-header .section-heading { margin-bottom: 0; }
+      .gallery-header > p { max-width: 450px; font-size: 11px; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 205px 150px 150px; gap: 9px; }
+      .gallery-item:first-child { grid-row: span 2; }
+      .gallery-item:nth-child(4) { grid-column: 1 / -1; }
+      .why-grid { grid-template-columns: 1fr; gap: 35px; }
+      .why-intro h2 { font-size: 42px; }
+      .why-intro p { font-size: 12px; }
+      .why-list { gap: 22px 16px; }
+      .why-item { gap: 10px; }
+      .why-item .service-icon { width: 36px; height: 36px; }
+      .why-item h3 { font-size: 11px; }
+      .why-item p { font-size: 10px; }
+      .route-band { padding: 47px 0; }
+      .route-inner { align-items: flex-start; flex-direction: column; gap: 20px; }
+      .route-inner h2 { font-size: 37px; }
+      .route-inner p { font-size: 11px; }
+      .faq-grid { grid-template-columns: 1fr; gap: 22px; }
+      .faq-intro h2 { font-size: 42px; }
+      .faq-intro p { font-size: 11px; }
+      .faq-item summary { padding: 18px 0; font-size: 12px; }
+      .faq-item p { font-size: 11px; }
+      .contact { padding: 75px 0 90px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 38px; }
+      .contact-intro h2 { font-size: 47px; }
+      .contact-intro > p { font-size: 12px; }
+      .booking-card { padding: 23px 18px; }
+      .booking-card h3 { font-size: 25px; }
+      .form-grid { gap: 12px; }
+      .field label { font-size: 9px; }
+      .site-footer { padding: 26px 0 91px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; gap: 13px; }
+      .footer-links { gap: 12px; }
+      .mobile-callbar { position: fixed; z-index: 21; right: 0; bottom: 0; left: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 9px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); border-top: 1px solid rgba(255,255,255,.1); background: rgba(6,17,23,.96); backdrop-filter: blur(12px); }
+      .mobile-callbar .button { min-height: 44px; padding-inline: 10px; font-size: 10px; }
+    }
+    @media (max-width: 420px) {
+      .brand-sub { font-size: 8px; }
+      .hero-content { padding-top: 78px; }
+      .hero h1 { font-size: 47px; }
+      .button { min-height: 46px; padding-inline: 17px; }
+      .service-card { min-height: 234px; padding: 18px 14px; }
+      .service-card h3 { font-size: 18px; }
+      .fleet-card { grid-template-columns: .8fr 1.2fr; }
+      .fleet-card-image { min-height: 205px; }
+      .fleet-card-body { padding: 13px; }
+      .fleet-card h3 { font-size: 18px; }
+      .gallery-grid { grid-template-rows: 180px 135px 135px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Mersin Transfer VIP",
+    "url": "https://mersintransfervip.com/",
+    "telephone": "+90 546 260 44 32",
+    "email": "info@mersintransfervip.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Yenişehir",
+      "addressRegion": "Mersin",
+      "addressCountry": "TR"
+    },
+    "areaServed": ["Mersin", "Türkiye"],
+    "description": "Mersin çıkışlı VIP şehir içi, şehirler arası ve havalimanı transfer hizmetleri.",
+    "openingHours": "Mo-Su 00:00-23:59"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">İçeriğe geç</a>
+  <div class="topline">
+    <div class="container topline-inner">
+      <div class="topline-left"><span><i class="topline-dot"></i>Mersin, Türkiye</span><span>7/24 kesintisiz rezervasyon</span></div>
+      <div class="topline-right"><a href="tel:+905462604432">0546 260 44 32</a><span aria-hidden="true">·</span><a href="mailto:info@mersintransfervip.com">E-posta gönder</a></div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#anasayfa" aria-label="Mersin Transfer VIP ana sayfa">
+        <span class="brand-mark" aria-hidden="true">MV</span>
+        <span class="brand-copy"><span class="brand-name">MERSİN TRANSFER VIP</span><span class="brand-sub">Özel yolculuk, kişiye özel konfor</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Ana menü">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#filo">Araçlarımız</a>
+        <a href="#neden-biz">Neden biz?</a>
+        <a href="#sss">Sık sorulanlar</a>
+        <a class="nav-cta" href="#iletisim">Rezervasyon iste</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="anasayfa" aria-labelledby="hero-title">
+      <img class="hero-image" src="/assets/images/fleet-4.webp" alt="Mersin marinasında VIP transfer aracı" fetchpriority="high">
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <span class="eyebrow">Mersin çıkışlı · 7/24 hizmet</span>
+        <h1 id="hero-title">Yolculuğunuz, <em>size özel</em> başlasın.</h1>
+        <p class="hero-copy">Şehir içi ve şehirler arası VIP transfer, Çukurova Havalimanı ulaşımı ve özel şoförlü araç seçenekleri. Mersin’den Türkiye’nin dört bir yanına konforlu yolculuk.</p>
+        <div class="button-row">
+          <a class="button button-gold" href="#iletisim">
+            Rezervasyon talebi
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="button button-outline" href="#filo">Filomuzu inceleyin</a>
+        </div>
+        <div class="hero-note"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="9"/></svg></span><span>Planınızı paylaşın, yolculuğunuzu birlikte netleştirelim.</span></div>
+      </div>
+      <div class="hero-footer">
+        <div class="container hero-points">
+          <div class="hero-point"><span class="point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><strong>7/24 rezervasyon</strong><small>İhtiyacınız olduğunda ulaşın</small></div></div>
+          <div class="hero-point"><span class="point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10M9 20v-6h6v6"/></svg></span><div><strong>Mersin merkezli</strong><small>Şehir içi ve şehirler arası</small></div></div>
+          <div class="hero-point"><span class="point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 12h18M6 12l2-6h8l2 6M5 12v5h14v-5M8 17v2m8-2v2"/></svg></span><div><strong>VIP araç seçenekleri</strong><small>Yolculuğunuza uygun araç</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="hizmetler" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow">Yolculuğunuz için</span>
+          <h2 id="services-title">İhtiyacınıza uygun transfer</h2>
+          <p>Mersin’den başlayan kısa ya da uzun yolculuklar için, planınıza ve yolcu sayınıza göre özel ulaşım seçenekleri.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10M9 20v-6h6v6"/></svg></span>
+            <h3>Şehir içi VIP transfer</h3><p>Yenişehir, Mezitli, Toroslar, Tarsus, Erdemli, Silifke ve Mersin’in diğer ilçelerine özel ulaşım.</p>
+            <span class="service-link">Bilgi ve rezervasyon <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span><a href="#iletisim" aria-label="Şehir içi VIP transfer için rezervasyon iste"></a>
+          </article>
+          <article class="service-card">
+            <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 15.5 3 12l2-5h14l2 5-1 3.5v3h-3v-3H7v3H4z"/><path d="M5 12h14M7 9h.01M17 9h.01"/></svg></span>
+            <h3>Şehirler arası transfer</h3><p>Mersin’den Türkiye’nin farklı şehirlerine, size ve yolculuğunuza özel VIP ulaşım.</p>
+            <span class="service-link">Bilgi ve rezervasyon <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span><a href="#iletisim" aria-label="Şehirler arası transfer için rezervasyon iste"></a>
+          </article>
+          <article class="service-card">
+            <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 14.5 22 8l-8 8-3.5 1 1-3.5z"/><path d="m10.5 13 4.5 7 2-1-2.5-8"/></svg></span>
+            <h3>Havalimanı transferi</h3><p>Çukurova Uluslararası Havalimanı yolculuğunuz için uçuş saatinize göre planlanan ulaşım.</p>
+            <span class="service-link">Bilgi ve rezervasyon <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span><a href="#iletisim" aria-label="Havalimanı transferi için rezervasyon iste"></a>
+          </article>
+          <article class="service-card">
+            <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20V7l8-4 8 4v13M2 20h20M8 10h2m4 0h2M8 14h2m4 0h2M10 20v-3h4v3"/></svg></span>
+            <h3>Kurumsal transfer</h3><p>Şirket yöneticileri, iş ortakları ve özel konuklar için profesyonel ulaşım planlaması.</p>
+            <span class="service-link">Kurumsal bilgi alın <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span><a href="#iletisim" aria-label="Kurumsal transfer için bilgi al"></a>
+          </article>
+          <article class="service-card">
+            <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3v3m0 12v3M3 12h3m12 0h3"/><path d="m5.6 5.6 2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1"/><circle cx="12" cy="12" r="5"/></svg></span>
+            <h3>Özel gün transferleri</h3><p>Düğün, nişan, toplantı, lansman ve organizasyonlar için araç ve şoför seçeneği.</p>
+            <span class="service-link">Planınızı paylaşın <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span><a href="#iletisim" aria-label="Özel gün transferi için rezervasyon iste"></a>
+          </article>
+          <article class="service-card">
+            <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2M8 3.8l1.5 2M16 3.8l-1.5 2"/></svg></span>
+            <h3>Şoförlü araç kiralama</h3><p>Gün boyu devam eden programlarınız için size özel şoförlü VIP araç seçeneği.</p>
+            <span class="service-link">Uygunluğu sorun <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span><a href="#iletisim" aria-label="Şoförlü araç kiralama için bilgi al"></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="split-section" aria-labelledby="comfort-title">
+      <div class="split-grid">
+        <div class="split-image-wrap">
+          <img class="split-image" src="/assets/images/fleet-5.webp" alt="VIP transfer aracının geniş ve konforlu iç tasarımı" loading="lazy">
+          <span class="image-caption">Yolculuğunuz boyunca size ayrılmış VIP konfor</span>
+        </div>
+        <div class="split-copy">
+          <span class="eyebrow">Mersin Transfer VIP</span>
+          <h2 id="comfort-title">Yolun her anında konforu hissedin.</h2>
+          <p>Özel şoförlü transferde yolculuk, kapıdan kapıya ulaşım planıyla kolaylaşır. Uçuş, iş toplantısı veya özel gün programınıza göre rezervasyonunuzu önceden oluşturun.</p>
+          <ul class="benefit-list">
+            <li><span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><strong>Deneyimli şoför kadrosu</strong><span>Güzergâh ve yolculuk planınıza uygun profesyonel sürüş.</span></div></li>
+            <li><span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><strong>Konfor donanımlı araçlar</strong><span>Vito ve Sprinter VIP seçenekleriyle farklı yolcu gruplarına uygun filo.</span></div></li>
+            <li><span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><strong>7/24 iletişim ve rezervasyon</strong><span>Transfer saatinizi ve buluşma noktanızı önceden paylaşın.</span></div></li>
+            <li><span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><strong>Kurumsal seyahat seçeneği</strong><span>Kurumsal yolculuklar için faturalı hizmet talep edebilirsiniz.</span></div></li>
+          </ul>
+          <div><a class="button button-dark" href="#iletisim">Yolculuğunuzu planlayın <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fleet" id="filo" aria-labelledby="fleet-title">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Konfor için seçildi</span>
+          <h2 id="fleet-title">Yolculuğunuza uygun VIP araçlar</h2>
+          <p>Tek kişi, aile veya kalabalık gruplar için farklı araç seçenekleri. Araç ve müsaitlik bilgisini rezervasyon sırasında birlikte netleştirelim.</p>
+        </div>
+        <div class="fleet-grid">
+          <article class="fleet-card">
+            <div class="fleet-card-image"><img src="/assets/images/fleet-1.webp" alt="Mersin marinasında siyah VIP Vito" loading="lazy"></div>
+            <div class="fleet-card-body"><span class="fleet-card-label">Aile ve iş seyahatleri</span><h3>Mercedes Vito VIP</h3><p>9 kişiye kadar kapasitesiyle şehir içi ve şehirler arası yolculuklar için.</p><div class="tag-row"><span class="tag">Klima</span><span class="tag">Geniş bagaj</span><span class="tag">VIP iç tasarım</span></div></div>
+          </article>
+          <article class="fleet-card">
+            <div class="fleet-card-image"><img src="/assets/images/fleet-2.webp" alt="Mersin Transfer VIP filosundaki siyah transfer araçları" loading="lazy"></div>
+            <div class="fleet-card-body"><span class="fleet-card-label">Kalabalık gruplar</span><h3>Mercedes Sprinter VIP</h3><p>16 kişilik kapasitesiyle grup transferi ve organizasyon yolculukları için.</p><div class="tag-row"><span class="tag">Konforlu koltuklar</span><span class="tag">Geniş kapasite</span></div></div>
+          </article>
+          <article class="fleet-card">
+            <div class="fleet-card-image"><img src="/assets/images/fleet-5.webp" alt="VIP transfer aracında deri koltuk ve aydınlatmalı iç tasarım" loading="lazy"></div>
+            <div class="fleet-card-body"><span class="fleet-card-label">Özel yolculuklar</span><h3>VIP iç mekân</h3><p>Yolculuk süresince rahat etmeniz için tasarlanmış, özenli ve ferah kabin.</p><div class="tag-row"><span class="tag">Deri koltuklar</span><span class="tag">USB şarj</span><span class="tag">Wi-Fi</span></div></div>
+          </article>
+        </div>
+        <div class="fleet-note"><p><strong>Farklı araç ihtiyaçlarınız mı var?</strong> Vito Business, Vito Black Edition, Sprinter Royal VIP ve Mercedes S-Class seçenekleri için yolcu sayınızı ve güzergâhınızı paylaşın.</p><a href="#iletisim">Araç uygunluğunu sorun&nbsp; →</a></div>
+      </div>
+    </section>
+
+    <section class="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="gallery-header">
+          <div class="section-heading"><span class="eyebrow">Filomuzdan kareler</span><h2 id="gallery-title">Yolculuğa yakından bakın</h2></div>
+          <p>Gerçek araç ve iç mekân fotoğraflarını inceleyin; size uygun seçeneği rezervasyon sırasında belirleyin.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item"><figure><img src="/assets/images/fleet-3.webp" alt="Havalimanı transferinde VIP araçlar" loading="lazy"><figcaption>Havalimanı karşılaması</figcaption></figure></div>
+          <div class="gallery-item"><figure><img src="/assets/images/fleet-6.webp" alt="Mersin'de hizmet veren siyah VIP transfer aracı" loading="lazy"><figcaption>Mersin çıkışlı özel transfer</figcaption></figure></div>
+          <div class="gallery-item"><figure><img src="/assets/images/fleet-7.webp" alt="Gece yolculuğuna hazır VIP transfer aracı" loading="lazy"><figcaption>Günün her saati</figcaption></figure></div>
+          <div class="gallery-item"><figure><img src="/assets/images/fleet-4.webp" alt="Marina çevresinde VIP transfer aracı" loading="lazy"><figcaption>Mersin'den Türkiye'ye</figcaption></figure></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why" id="neden-biz" aria-labelledby="why-title">
+      <div class="container why-grid">
+        <div class="why-intro">
+          <span class="eyebrow">Mersin Transfer VIP</span>
+          <h2 id="why-title">Özenli bir yolculuk için doğru planlama.</h2>
+          <p>Ulaşım ihtiyacınızı, yolcu sayınızı ve hareket saatinizi paylaşın. Ekibimiz size uygun araç ve transfer planı için yardımcı olsun.</p>
+          <a class="button button-dark" href="#iletisim">Bize ulaşın <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+        <div class="why-list">
+          <div class="why-item"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5 20a7 7 0 0 1 14 0"/></svg></span><div><h3>Deneyimli şoförler</h3><p>Güzergâh bilgisi ve profesyonel sürüş yaklaşımı.</p></div></div>
+          <div class="why-item"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 15.5 3 12l2-5h14l2 5-1 3.5v3h-3v-3H7v3H4z"/><path d="M5 12h14"/></svg></span><div><h3>VIP araç filosu</h3><p>Vito ve Sprinter araç seçenekleriyle konforlu ulaşım.</p></div></div>
+          <div class="why-item"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>7/24 iletişim</h3><p>Rezervasyon ve transfer planlaması için kesintisiz ulaşılabilirlik.</p></div></div>
+          <div class="why-item"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20V7l8-4 8 4v13M2 20h20M8 10h2m4 0h2"/></svg></span><div><h3>Kurumsal çözümler</h3><p>İş seyahatleri için planlı ve faturalı transfer seçeneği.</p></div></div>
+          <div class="why-item"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3 4 7v5c0 5 3.4 7.7 8 9 4.6-1.3 8-4 8-9V7z"/><path d="m8.5 12 2.3 2.3 4.8-5"/></svg></span><div><h3>Güvenli sürüş yaklaşımı</h3><p>Yolculuk planına ve güzergâha uygun dikkatli ulaşım.</p></div></div>
+          <div class="why-item"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="8"/></svg></span><div><h3>Size özel planlama</h3><p>Hizmet türü ve araç seçeneği yolculuk ihtiyacınıza göre belirlenir.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="route-band">
+      <div class="container route-inner">
+        <div><h2>Mersin’den Türkiye’nin dört bir yanına.</h2><p>Şehir içi, havalimanı ve şehirler arası transfer için rezervasyonunuzu planlayın.</p></div>
+        <a class="button button-gold" href="#iletisim">Yolculuğunuzu sorun <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      </div>
+    </section>
+
+    <section class="section faq" id="sss" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-intro"><span class="eyebrow">Yardımcı olalım</span><h2 id="faq-title">Sık sorulanlar</h2><p>Transfer planınızla ilgili ayrıntıları telefonla veya WhatsApp üzerinden ekibimize iletebilirsiniz.</p><a href="https://wa.me/905462604432?text=Merhaba%2C%20VIP%20transfer%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="service-link" target="_blank" rel="noopener noreferrer">WhatsApp'tan sorun&nbsp; →</a></div>
+        <div class="faq-items">
+          <details class="faq-item"><summary>Hangi bölgelerde transfer hizmeti veriliyor?</summary><p>Mersin merkez ve çevre ilçelerinin yanı sıra Mersin çıkışlı şehirler arası transfer talepleri için hizmet sunuluyor. Güzergâhınızı paylaşarak uygunluk bilgisi alabilirsiniz.</p></details>
+          <details class="faq-item"><summary>Çukurova Havalimanı transferi için nasıl rezervasyon yapabilirim?</summary><p>Uçuş saatinizi, hareket noktanızı ve varış adresinizi telefonla veya WhatsApp üzerinden iletin. Transfer planınızı ekiple birlikte netleştirin.</p></details>
+          <details class="faq-item"><summary>Kaç kişilik araç seçenekleri bulunuyor?</summary><p>Vito VIP araçlar 9 kişiye, Sprinter VIP araçlar 16 kişiye kadar kapasite seçenekleriyle sunuluyor. Araç müsaitliği ve yolcu sayınıza uygun seçenek için rezervasyon sırasında bilgi alın.</p></details>
+          <details class="faq-item"><summary>Rezervasyonu ne zaman oluşturmalıyım?</summary><p>Talebinizi yolculuk tarihinizden önce iletmeniz planlama için yardımcı olur. Yakın tarihli transfer talepleriniz için 7/24 rezervasyon hattını arayabilirsiniz.</p></details>
+          <details class="faq-item"><summary>Kurumsal transfer için fatura alabilir miyim?</summary><p>Kurumsal transfer ve faturalandırma talebinizi rezervasyon sırasında paylaşabilirsiniz; ayrıntılar için ekiple iletişime geçin.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="iletisim" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <span class="eyebrow">Yolculuk planınız hazır mı?</span>
+          <h2 id="contact-title">Bize ulaşın.</h2>
+          <p>Güzergâhınızı ve yolculuk ayrıntılarınızı paylaşın. Ekibimiz uygun araç ve transfer planı için size yardımcı olsun.</p>
+          <div class="button-row">
+            <a class="button button-gold" href="tel:+905462604432"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 4h4l2 5-3 2a15 15 0 0 0 5 5l2-3 5 2v4c0 1-1 2-2 2-8 0-15-7-15-15 0-1 1-2 2-2z"/></svg>Hemen arayın</a>
+            <a class="button button-outline" href="https://wa.me/905462604432?text=Merhaba%2C%20Mersin%20Transfer%20VIP%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp'tan yazın</a>
+          </div>
+          <div class="contact-list">
+            <div class="contact-line"><span class="point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-3 2a15 15 0 0 0 5 5l2-3 5 2v4c0 1-1 2-2 2-8 0-15-7-15-15 0-1 1-2 2-2z"/></svg></span><div><small>Telefon / WhatsApp</small><a href="tel:+905462604432">+90 546 260 44 32</a></div></div>
+            <div class="contact-line"><span class="point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><div><small>E-posta</small><a href="mailto:info@mersintransfervip.com">info@mersintransfervip.com</a></div></div>
+            <div class="contact-line"><span class="point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><small>Hizmet merkezi</small><strong>Yenişehir / Mersin</strong></div></div>
+          </div>
+        </div>
+        <div class="booking-card">
+          <h3>Transfer talebi oluşturun</h3>
+          <p>Bilgileri girin; rezervasyon mesajınız WhatsApp'ta hazır açılsın.</p>
+          <form id="booking-form">
+            <div class="form-grid">
+              <div class="field"><label for="booking-name">Adınız</label><input id="booking-name" name="name" autocomplete="name" placeholder="Adınız"></div>
+              <div class="field"><label for="booking-date">Yolculuk tarihi *</label><input id="booking-date" name="date" type="date" required></div>
+              <div class="field"><label for="booking-time">Saat *</label><input id="booking-time" name="time" type="time" required></div>
+              <div class="field"><label for="booking-vehicle">Araç tercihi</label><select id="booking-vehicle" name="vehicle"><option value="">Henüz emin değilim</option><option>Mercedes Vito VIP</option><option>Mercedes Sprinter VIP</option><option>Mercedes S-Class VIP</option><option>Diğer / öneri rica ediyorum</option></select></div>
+              <div class="field"><label for="booking-from">Kalkış noktası *</label><input id="booking-from" name="from" placeholder="Örn. Mersin Marina" required></div>
+              <div class="field"><label for="booking-to">Varış noktası *</label><input id="booking-to" name="to" placeholder="Örn. Çukurova Havalimanı" required></div>
+              <div class="field full"><label for="booking-note">Ek not</label><textarea id="booking-note" name="note" placeholder="Yolcu sayısı veya paylaşmak istediğiniz başka bir ayrıntı"></textarea></div>
+            </div>
+            <button class="button button-gold form-submit" type="submit">Talebi WhatsApp'ta hazırla <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+            <p class="form-privacy">Bu form bilgileri site sunucusuna kaydetmez. Bilgiler WhatsApp mesajı olarak hazırlanır; gönderim WhatsApp uygulamasında sizin onayınızla tamamlanır.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="#anasayfa">MERSİN TRANSFER VIP</a>
+      <span>© <span id="year">2026</span> Mersin Transfer VIP. Tüm hakları saklıdır.</span>
+      <div class="footer-links"><a href="#hizmetler">Hizmetler</a><a href="#filo">Araçlarımız</a><a href="#sss">Sık sorulanlar</a><a href="#iletisim">İletişim</a></div>
+    </div>
+  </footer>
+  <div class="mobile-callbar" aria-label="Hızlı iletişim">
+    <a class="button button-outline" href="tel:+905462604432"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 4h4l2 5-3 2a15 15 0 0 0 5 5l2-3 5 2v4c0 1-1 2-2 2-8 0-15-7-15-15 0-1 1-2 2-2z"/></svg>Ara</a>
+    <a class="button button-gold" href="https://wa.me/905462604432?text=Merhaba%2C%20VIP%20transfer%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </div>
+  <script>
+    const menuToggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector("#site-nav");
+    const closeMenu = () => {
+      nav.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Menüyü aç");
+      document.body.classList.remove("menu-open");
+    };
+    menuToggle.addEventListener("click", () => {
+      const open = menuToggle.getAttribute("aria-expanded") !== "true";
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.setAttribute("aria-label", open ? "Menüyü kapat" : "Menüyü aç");
+      nav.classList.toggle("is-open", open);
+      document.body.classList.toggle("menu-open", open);
+    });
+    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+    document.querySelector("#year").textContent = String(new Date().getFullYear());
+    document.querySelector("#booking-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = new FormData(event.currentTarget);
+      const rows = [
+        "Merhaba, Mersin Transfer VIP için rezervasyon talebim var.",
+        "Ad: " + (form.get("name") || "Belirtilmedi"),
+        "Tarih: " + form.get("date"),
+        "Saat: " + form.get("time"),
+        "Araç tercihi: " + (form.get("vehicle") || "Henüz emin değilim"),
+        "Kalkış: " + form.get("from"),
+        "Varış: " + form.get("to"),
+        "Not: " + (form.get("note") || "Yok")
+      ];
+      const url = "https://wa.me/905462604432?text=" + encodeURIComponent(rows.join("\n"));
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
