@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title">
+<title id="title">Mersin Transfer VIP amblemi</title>
+<rect x="3" y="3" width="74" height="74" rx="24" fill="#081820"/>
+<rect x="5" y="5" width="70" height="70" rx="22" fill="none" stroke="#d9b875" stroke-width="1.5"/>
+<path d="M20 53 25 27l15 16 15-16 5 26" fill="none" stroke="#f3e1b6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 45v19" fill="none" stroke="#d9b875" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<circle cx="40" cy="20" r="2.5" fill="#d9b875"/>
+</svg>
